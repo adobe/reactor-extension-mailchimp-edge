@@ -1,0 +1,29 @@
+{
+    "form":[
+        {
+            "name":"siteurl",
+            "dataElement":false,
+            "mandatory":true,
+            "label":"Mailchimp Server Prefix Domain Name",
+            "width":"100%",
+            "type":"text",
+            "tooltipSupport":true,
+            "tooltipContent": "The domain generated after registering for mailchimp server_prefix.api.mailchimp.com ",
+            "referenceUrl": "https://mailchimp.com/developer/marketing/guides/quick-start/#make-your-first-api-call"
+
+
+        },
+        {
+            "name":"token",
+            "dataElement":true,
+            "mandatory":true,
+            "label":"Mailchimp token",
+            "width":"100%",
+            "type":"password",
+            "tooltipSupport":true,
+            "tooltipContent": "An access token is required to send events to mailchimp ",
+            "referenceUrl": "https://mailchimp.com/developer/marketing/guides/quick-start/#generate-your-api-key"
+
+        } 
+    ]
+}

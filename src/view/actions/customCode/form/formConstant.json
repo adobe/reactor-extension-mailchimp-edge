@@ -1,0 +1,52 @@
+{
+   "form":[
+    {
+       "name":"name",
+       "dataElement":true,
+       "mandatory":true,
+       "label":"Name",
+       "tooltipSupport":false,
+       "tooltipContent":"",
+       "width":"90%"
+
+    },
+    {
+        "name":"properties",
+        "dataElement":true,
+        "mandatory":false,
+        "label":"Properties",
+        "tooltipSupport":false,
+        "tooltipContent":"",
+        "width":"90%"
+
+
+     },
+     {
+      "name":"listid",
+      "dataElement":true,
+      "mandatory":true,
+      "label":"List-Id",
+      "tooltipSupport":false,
+      "width":"90%",
+      "type":"text"
+
+  },
+  {
+      "name":"email",
+      "dataElement":true,
+      "mandatory":true,
+      "label":"Email-Id",
+      "tooltipSupport":false,
+      "width":"90%",
+      "type":"text"
+  } ,
+  {
+    "name":"occurred_at",
+    "dataElement":true,
+    "mandatory":false,
+    "label":"Occurred_at",
+    "tooltipSupport":true,
+    "tooltipContent":"This field requires ISO 8601 format like [hh][mm][ss]."
+ }
+ ]
+}

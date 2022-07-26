@@ -1,0 +1,66 @@
+{
+  "displayName": "Mailchimp",
+  "name": "reactor-extension-mailchimp-edge",
+  "platform": "edge",
+  "iconPath": "resources/icons/mailchimp-logo.svg",
+  "version": "1.0.2",
+  "description": "Use this extension to manage and forward customer event data to Mailchimp and trigger audience emails.",
+  "exchangeUrl": "https://exchange.adobe.com/apps/ec/108537/adobe-launch-edge-extension-for-mailchimp",
+  "author": {
+    "name": "Adobe",
+    "url": "http://adobe.com",
+    "email": "platform-support@adobe.com"
+  },
+  "viewBasePath": "dist/",
+  "configuration": {
+    "viewPath": "configuration/configuration.html",
+    "schema": {
+      "$schema": "http://json-schema.org/draft-04/schema#",
+      "type": "object",
+      "properties": {
+        "siteurl": {
+          "type": "string"
+        },
+        "token": {
+          "type": "string"
+        }
+      },
+      "required": ["siteurl","token"],
+      "additionalProperties": false
+    }
+  },
+  "actions": [
+    {
+      "displayName": "Add Event",
+      "name": "add-event",
+      "schema": {
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "properties": {
+            "type": "string"
+          },
+          "listid": {
+            "type": "string"
+          },
+          "email": {
+            "type": "string"
+          },
+          "occurred_at": {
+            "type": "string"
+          },
+          "is_syncing": {
+            "type": "string"
+          }
+        },
+        "required": ["name","listid","email"],
+        "additionalProperties": false
+      },
+      "libPath": "src/lib/actions/addEvent.js",
+      "viewPath": "actions/addEvent.html"
+    }
+  ]
+}
