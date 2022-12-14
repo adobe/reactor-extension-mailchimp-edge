@@ -1,5 +1,5 @@
 {
-  "name": "reactor-extension-mailchimp-edge",
+  "name": "@adobe/reactor-extension-mailchimp-edge",
   "version": "1.0.2",
   "description": "Adobe event forwarding extension for Mailchimp",
   "scripts": {
